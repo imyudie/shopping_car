@@ -131,9 +131,20 @@
                     url: 'checkout.php',
                     method: 'POST',
                     data: { items: selectedItems },
-                    success: function(response) {
+                    success: function(order_id) {
+                        // 彈出成功提示框
                         alert('結帳成功！總金額：' + selectedTotal + ' 元');
-                        location.reload(); // 刷新頁面
+
+                        // 在新分頁中打開訂單詳情頁面
+                        var newWindow = window.open('order_details.php?order_id=' + order_id, '_blank');
+                        if (newWindow) {
+                            newWindow.focus();
+                        } else {
+                            alert('請允許彈出視窗來顯示訂單詳情。');
+                        }
+                    },
+                    error: function() {
+                        alert('結帳過程中發生錯誤。');
                     }
                 });
             } else {
