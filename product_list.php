@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>商品列表</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <?php require_once 'nav.php'; ?>

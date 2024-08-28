@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>購物車</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <?php require_once 'nav.php'; ?>
@@ -25,9 +26,11 @@
             <!-- 購物車商品將會動態添加到這裡 -->
         </tbody>
     </table>
-
-    <h3>總金額：<span id="totalPrice">0</span> 元</h3>
-    <button id="checkout">結帳選擇的商品</button>
+    <div id='total'>
+        <h3>總金額：<span id="totalPrice">0</span> 元</h3>
+        <button id="checkout">結帳選擇的商品</button>
+    </div>
+    
 
     <script>
         // 載入購物車

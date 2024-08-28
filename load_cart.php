@@ -18,9 +18,11 @@ while($row = $result->fetch_assoc()) {
         <td>' . $row['name'] . '</td>
         <td class="price">' . $row['price'] . ' 元</td>
         <td>
-            <button class="decrease" data-pno="' . $row['p_no'] . '">-</button>
-            <input type="number" class="quantity" data-pno="' . $row['p_no'] . '" value="' . $row['quantity'] . '" min="1">
-            <button class="increase" data-pno="' . $row['p_no'] . '">+</button>
+            <div id="DI">
+                <button class="decrease" data-pno="' . $row['p_no'] . '">-</button>
+                <input type="number" class="quantity" data-pno="' . $row['p_no'] . '" value="' . $row['quantity'] . '" min="1">
+                <button class="increase" data-pno="' . $row['p_no'] . '">+</button>
+            </div>
         </td>
         <td>' . $itemTotal . ' 元</td>
         <td><button class="delete" data-pno="' . $row['p_no'] . '">刪除</button></td>

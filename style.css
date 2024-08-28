@@ -1,0 +1,170 @@
+/* 設置全局樣式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5dc; /* 米色背景 */
+    color: #333; /* 文字顏色 */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* 標題樣式 */
+h1 {
+    text-align: center;
+    color: #6b705c; /* 深米色調 */
+    margin: 20px 0;
+}
+
+/* 導航欄樣式 */
+nav {
+    background-color: #ece4b7; /* 淡米色背景 */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* 文字顏色 */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d3d3a7; /* 當鼠標懸停時，背景變為淡米色 */
+}
+
+/* 表單樣式 */
+form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 3px;
+    background-color: #fff8dc; /* 浅米色背景 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333; /* 文字顏色 */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 97%;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #6b705c; /* 深米色調 */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #9a8f7e; /* 當鼠標懸停時，按鈕變色 */
+}
+
+/* 回應訊息樣式 */
+#responseMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #6b705c; /* 深米色調 */
+}
+/* 購物車表格樣式 */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+thead th {
+    background-color: #d3d3a7; /* 淡米色背景 */
+    color: #333;
+    padding: 10px;
+}
+
+tbody td {
+    
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+#DI {
+    display: flex;
+    justify-content: flex-start;
+}
+#cart input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+.quantity {
+    width: 50px;
+    text-align: center;
+}
+
+.price, .total {
+    font-weight: bold;
+    color: #6b705c; /* 深米色調 */
+}
+
+button {
+    background-color: #6b705c; /* 深米色調 */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    
+}
+
+button:hover {
+    background-color: #8a7d72; /* 更深的米色 */
+}
+
+/* 總金額顯示樣式 */
+#totalPrice {
+    color: #8a7d72;
+    font-size: 1.2em;
+}
+#total{
+    float:right;
+    margin-right:10%;
+}
+.decrease{
+    margin-right:3px;
+}
+.increase{
+    margin-left:3px;
+}
+
