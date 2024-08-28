@@ -22,6 +22,7 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <title>訂單詳情</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>訂單編號：<?php echo $order['order_id']; ?></h1>
